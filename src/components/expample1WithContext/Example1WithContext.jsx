@@ -3,6 +3,7 @@ import NameFormWithContext from './NameFormWithContext.jsx'
 import HelloOutputWithContext from './HelloOutputWithContext.jsx'
 
 import {createContext,useState} from 'react'
+import MyNameIs from "../mynameis/MyNameIs.jsx";
 
 export const SharedNameContext = createContext();
 
@@ -21,6 +22,9 @@ export default function Example1WithContext() {
                     <div className="child">
                         <HelloOutputWithContext />
                     </div>
+                </div>
+                <div>
+                    <MyNameIs />
                 </div>
             </SharedNameContext.Provider>
         </>

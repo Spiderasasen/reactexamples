@@ -3,9 +3,10 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
 import Example1 from "./components/example1/Example1.jsx";
+import Example1WithContext from "./components/expample1WithContext/Example1WithContext.jsx";
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Example1 />
+    <Example1WithContext />
   </StrictMode>,
 )
